@@ -45,10 +45,14 @@
           <label>Email</label>
         </div>
 
+        <input type="hidden" name="to_email" />
+
         <button type="submit" class="btn">DOWNLOAD</button>
       </form>
     </div>
   </div>
+
+  form.to_email.value = form.user_email.value;
 
   <!-- JavaScript to Send Form via EmailJS -->
   <script>
