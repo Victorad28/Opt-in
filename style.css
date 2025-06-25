@@ -209,8 +209,9 @@ h2 {
     padding:10px 0;
     background: #6fd649;
     color: #fff;
-    
-    
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
   }
 
   /* Adjust the spinning animation for mobile */
