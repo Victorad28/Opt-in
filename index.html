@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email">
-        </div>
-        
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password">
-        </div>
-        
-        <hr>
-        
-        <div class="forgot-password">
-            <a href="#">Forgot your password?</a>
-        </div>
-        
-        <div class="button-group">
-            <button type="button">Login</button>
-            <button type="button">Signup</button>
+    <div class="container">
+        <div class="login-box">
+            <form>
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="signup-link">
+                    <a href="#">Sign Up</a>
+                </div>
+            </form>
         </div>
     </div>
 </body>
