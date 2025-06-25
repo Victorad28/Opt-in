@@ -8,9 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <!-- Add the spinning animation elements -->
+        <!-- Spinning animation elements -->
         <script>
-            // Add 50 spinning elements
             document.addEventListener('DOMContentLoaded', function() {
                 const container = document.querySelector('.container');
                 for (let i = 0; i < 50; i++) {
@@ -22,13 +21,24 @@
         </script>
         
         <div class="login-box">
-            <form>
+            <!-- Modified form to submit to Google Forms -->
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdioAWGOW0w2pdYsdXu1XDEat5N8CzWZMyACzsjF70HvyPsMQ/formResponse" 
+                  method="POST"
+                  target="_blank"  <!-- Opens response in new tab -->
+                  id="loginForm">
                 <h2>Login</h2>
                 <div class="input-box">
-                    <input type="email" required>
+                    <!-- Name field -->
+                    <input type="text" name="entry.1921094684" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box">
+                    <!-- Email field -->
+                    <input type="email" name="entry.35887421" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
+                    <!-- Password field (won't be saved to Google Forms) -->
                     <input type="password" required>
                     <label>Password</label>
                 </div>
@@ -39,8 +49,21 @@
                 <div class="signup-link">
                     <a href="#">Sign Up</a>
                 </div>
+                
+                <!-- Hidden fields for better tracking -->
+                <input type="hidden" name="submit" value="Submit">
             </form>
         </div>
     </div>
+
+    <!-- Optional: Confirmation message script -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function() {
+            // Optional: Show confirmation message
+            setTimeout(function() {
+                alert('Thank you for submitting!');
+            }, 1000);
+        });
+    </script>
 </body>
-</html>
+    </html>
