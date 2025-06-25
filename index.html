@@ -29,7 +29,6 @@
     </script>
 
     <div class="login-box">
-      <!-- FORM START -->
       <form id="contact-form">
         <h2>Download</h2>
 
@@ -43,45 +42,44 @@
           <label>Email</label>
         </div>
 
-        <!-- Hidden field for dynamic recipient -->
         <input type="hidden" name="to_email" />
 
-        <button type="submit" class="btn" onclick="openPopup()">DOWNLOAD</button>
+        <button type="submit" class="btn">DOWNLOAD</button>
       </form>
     </div>
   </div>
 
+  <!-- ✅ POPUP -->
   <div class="popup" id="popup">
-    <button type= "exit">X</button>
-    <h2>Congratulations 🎉 </h2>
-    <p>Your check your email to see your free 2 step plan to success</p>
-    <p>If you really motivated and want me to hold your hand and teach you click the link below</p>
-    <button type= "button">join me</button>
-    
-    
-    <script>
-      let popup= document.getElemenyById("popup");
+    <button type="button" class="close-btn" onclick="closePopup()">×</button>
+    <h2>Congratulations 🎉</h2>
+    <p>Check your email for your free 2-step plan to success.</p>
+    <p>If you're really motivated and want me to hold your hand, click the link below:</p>
+    <button type="button">Join Me</button>
+  </div>
 
-      function openPopup(){
-        popup.classList.add("open-popup")
-      }
-
-      
-    </script>
-
-  <!-- JavaScript to Send Form via EmailJS -->
+  <!-- ✅ JavaScript -->
   <script>
+    const popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+
     const form = document.getElementById('contact-form');
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // ✅ Set hidden recipient field value dynamically
       form.to_email.value = form.user_email.value;
 
       emailjs.sendForm('service_pq7bk9s', 'template_wenr7yi', this)
         .then(() => {
-          alert("🎉 Success! Check your email for the download.");
+          openPopup();
           form.reset();
         }, (error) => {
           alert("❌ Failed to send email. Please try again.");
