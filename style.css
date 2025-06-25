@@ -38,12 +38,8 @@ body {
 }
 
 @keyframes animateBlink {
-  0% {
-    background: #0ef;
-  }
-  25% {
-    background: #2c4766;
-  }
+  0% { background: #0ef; }
+  25% { background: #2c4766; }
 }
 
 .login-box {
@@ -105,21 +101,6 @@ h2 {
   color: #0ef;
 }
 
-.forgot-pass {
-  margin: -15px 0 10px;
-  text-align: center;
-}
-
-.forgot-pass a {
-  font-size: 0.85em;
-  color: #fff;
-  text-decoration: none;
-}
-
-.forgot-pass a:hover {
-  text-decoration: underline;
-}
-
 .btn {
   width: 100%;
   height: 45px;
@@ -133,115 +114,53 @@ h2 {
   font-weight: 600;
 }
 
-.signup-link {
-  margin: 20px 0 10px;
+/* ✅ POPUP STYLES */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  background: #fff;
   text-align: center;
+  border-radius: 6px;
+  transform: translate(-50%, -50%) scale(0.1);
+  padding: 30px;
+  color: #333;
+  visibility: hidden;
+  z-index: 1000;
+  transition: transform 0.4s, top 0.4s;
 }
 
-.signup-link a {
-  font-size: 1em;
-  color: #0ef;
-  text-decoration: none;
-  font-weight: 600;
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.signup-link a:hover {
-  text-decoration: underline;
-  }
+.popup button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #6fd649;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .login-box {
-    width: 100%;
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    padding: 0 20px;
-  }
-
-  .login-box form {
-    padding: 0;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .input-box {
-    margin: 20px 0;
-  }
-
-  .input-box input {
-    height: 45px;
-    font-size: 0.9em;
-  }
-
-  .btn {
-    height: 40px;
-    font-size: 0.9em;
-  }
-
-  .popup {
-    position: absolute;
-    background: #fff;
-    text-align: center;
-    top: 0%;
-    left: 50%;
-    width: 400px;
-    border-raduis: 6px;
-    transform: translate(-50%,-50%) scale(0.1);
-    padding: 0 30px 30px;
-    color: 333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-  }
-
-  .open-popup {
-    top: 50%;
-    visibility: visible;
-    transform: translate(-50%,-50%) scale(1);
-  }
-
-  .popup button {
-    margin-top: 50px;
-    width: 100%;
-    border: 0;
-    outline: none;
-    padding:10px 0;
-    background: #6fd649;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .popup exit {
-    top: 10px;
-    left: 10px;
-    background: #000;
-    color: #fff;
-    position: absolute;
-  }
-
-  .popup h2 {
-    font-size: 38px;
-    font-width: 500;
-    margin: 30px 0 10px;
-  }
-
-  /* Adjust the spinning animation for mobile */
-  .container span {
-    width: 15px;
-    height: 4px;
-    transform-origin: center;
-    animation: animateBlink 3s linear infinite;
-  }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5e57;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
