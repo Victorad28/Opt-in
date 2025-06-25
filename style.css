@@ -190,7 +190,7 @@ h2 {
 
   /* Adjust the spinning animation for mobile */
   .container span {
-    width: 100%;
+    width: 15px;
     height: 4px;
     transform-origin: center;
     animation: animateBlink 3s linear infinite;
