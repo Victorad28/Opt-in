@@ -146,53 +146,29 @@ h2 {
 }
 
 .signup-link a:hover {
-  text-decoration: undrrline;
+  text-decoration: underline;
   }
 
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .login-box {
-    width: 100%;
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    padding: 0 20px;
-  }
-
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
   .login-box form {
-    padding: 0;
+    padding: 0 15px; /* Further reduced padding */
   }
-
+  
   h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Smaller heading */
   }
-
+  
   .input-box {
-    margin: 20px 0;
+    margin: 15px 0; /* Tighter spacing */
   }
-
+  
   .input-box input {
-    height: 45px;
+    height: 45px; /* Slightly smaller inputs */
     font-size: 0.9em;
   }
-
+  
   .btn {
-    height: 40px;
-    font-size: 0.9em;
+    height: 45px;
   }
-
-  /* Adjust the spinning animation for mobile */
-  .container span {
-    width: 24px;
-    height: 4px;
-    transform-origin: center;
-    animation: animateBlink 3s linear infinite;
-  }
-  }
+    }
