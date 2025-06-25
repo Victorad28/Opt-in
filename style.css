@@ -24,7 +24,6 @@ body {
   align-items: center;
 }
 
-/* Add the spinning animation elements */
 .container span {
   position: absolute;
   left: 0;
@@ -33,27 +32,25 @@ body {
   background: #2c4766;
   border-radius: 8px;
   transform-origin: 128px;
+  transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
   animation: animateBlink 3s linear infinite;
   animation-delay: calc(var(--i) * (3s / 50));
 }
 
-/* Add 50 spinning elements using JavaScript or HTML */
 @keyframes animateBlink {
-  0% { background: #0ef; }
-  25% { background: #2c4766; }
+  0% {
+    background: #0ef;
+  }
+  25% {
+    background: #2c4766;
+  }
 }
 
 .login-box {
   position: absolute;
   width: 400px;
-  /* Center the login box */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
-/* Rest of your existing CSS remains the same */
 .login-box form {
   width: 100%;
   padding: 0 50px;
@@ -149,5 +146,5 @@ h2 {
 }
 
 .signup-link a:hover {
-  text-decoration: underline;
-}
+  text-decoration: undrrline;
+  }
