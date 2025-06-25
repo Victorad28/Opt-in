@@ -197,6 +197,8 @@ h2 {
     width: 400px;
     border-raduis: 6px;
     transform: translate(-50%,-50%);
+    padding: 0 30px 30px;
+    color: 333;
   }
 
   /* Adjust the spinning animation for mobile */
