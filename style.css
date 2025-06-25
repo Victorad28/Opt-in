@@ -27,7 +27,7 @@ body {
 .container span {
   position: absolute;
   left: 0;
-  width: 32px;
+  width: 20px;
   height: 6px;
   background: #2c4766;
   border-radius: 8px;
