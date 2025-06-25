@@ -46,16 +46,23 @@
         <!-- Hidden field for dynamic recipient -->
         <input type="hidden" name="to_email" />
 
-        <button type="submit" class="btn">DOWNLOAD</button>
+        <button type="submit" class="btn" onclick="openPopup()">DOWNLOAD</button>
       </form>
     </div>
   </div>
 
-  <div class="popup">
+  <div class="popup" id="popup">
     <h1>Congratulations 🎉 </h1>
     <p>Your check your email to see your free 2 step plan to success</p>
     <p>If you really motivated and want me to hold your hand and teach you click the link below</p>
     <button type= "button">join me</button>
+    
+    
+    <script>
+      let popup= document.getElemenyById("popup");
+
+      
+    </script>
 
   <!-- JavaScript to Send Form via EmailJS -->
   <script>
