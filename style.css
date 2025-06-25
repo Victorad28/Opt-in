@@ -194,6 +194,9 @@ h2 {
     text-align: center;
     top: 50%;
     left: 50%;
+    width: 400px;
+    border-raduis: 6px;
+    transform: translate(-50%,-50%);
   }
 
   /* Adjust the spinning animation for mobile */
