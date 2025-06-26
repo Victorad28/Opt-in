@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #000;
-  box-shadow: 0 0 50px #D4AF37;
+  box-shadow: 0 0 35px #D4AF37;
   border-radius: 20px;
 }
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 .input-box input {
-  width: 100%;
+  width: 85%;
   height: 50px;
   background: transparent;
   border: 2px solid #D4AF37;
