@@ -17,13 +17,13 @@ body {
 
 .container {
   position: relative;
-  width: 250px;
+  width: 290px;
   height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000;
-  box-shadow: 0 0 35px #D4AF37;
+  box-shadow: 0 0 35px #FFD700;
   border-radius: 20px;
   text-align: center;
 }
@@ -58,7 +58,7 @@ body {
 
 h2 {
   font-size: 2em;
-  color: #0ef;
+  color: #D4AF37;
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ h2 {
   width: 65%;
   height: 50px;
   background: transparent;
-  border: 2px solid #D4AF37;
+  border: 2px solid #FFD700;
   outline: none;
   border-radius: 40px;
   font-size: 1em;
@@ -82,7 +82,7 @@ h2 {
 
 .input-box input:focus,
 .input-box input:valid {
-  border-color: #0ef;
+  border-color: #D4AF37;
 }
 
 .input-box label {
