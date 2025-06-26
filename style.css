@@ -26,7 +26,6 @@ body {
   box-shadow: 0 0 35px #FFD700;
   border-radius: 20px;
   text-align: center;
-  left: 50%;
 }
 
 .co{
@@ -69,7 +68,7 @@ h2 {
 }
 
 .input-box input {
-  width: 65%;
+  width: 75%;
   height: 50px;
   background: transparent;
   border: 2px solid #FFD700;
@@ -117,6 +116,7 @@ h2 {
   font-size: 1em;
   color: #000;
   font-weight: 600;
+  margin-top: 60px;
 }
 
 /* ✅ POPUP STYLES */
