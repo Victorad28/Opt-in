@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
   background: #000;
 }
 
@@ -78,7 +78,6 @@ h2 {
   color: #fff;
   padding: 0 20px;
   transition: 0.5s ease;
-  margin-top: 50px;
 }
 
 .input-box input:focus,
