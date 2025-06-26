@@ -7,69 +7,48 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  width: 100%; /* 🟡 Prevents horizontal scroll */
+  height: 100%;
+  overflow-x: hidden; /* ✅ Stop side shift */
+}
+
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  justify-content: center; /* ✅ Center horizontally */
+  align-items: center;     /* ✅ Center vertically */
+  min-height: 100vh;
   background: #000;
+  padding: 20px; /* ✅ Add space on smaller screens */
 }
 
 .container {
-  position: relative;
-  width: 300px;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 400px; /* ✅ Restrict width on large screens */
+  padding: 30px 20px;
   background: #000;
   box-shadow: 0 0 35px #FFD700;
   border-radius: 20px;
   text-align: center;
 }
 
-.co{
-  position: absolute;
-  left: 0;
-  width: 32px;
-  height: 6px;
-  background: #2c4766;
-  border-radius: 8px;
-  transform-origin: 128px;
-  transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
-  animation: animateBlink 3s linear infinite;
-  animation-delay: calc(var(--i) * (3s / 50));
-}
-
-@keyframes animateBlink {
-  0% { background: #0ef; }
-  25% { background: #2c4766; }
-}
-
-.login-box {
-  position: absolute;
-  width: 400px;
-}
-
-.login-box form {
-  width: 100%;
-  padding: 0 50px;
+/* Optional animation - can be removed if not used */
+.co {
+  display: none; /* ❌ Not visible or necessary in this form */
 }
 
 h2 {
   font-size: 1.3em;
   color: #D4AF37;
-  text-align: center;
-  bottom: 40px 
+  margin-bottom: 40px; /* ✅ Space below heading */
 }
 
 .input-box {
-  position: relative;
   margin: 25px 0;
 }
 
 .input-box input {
-  width: 75%;
+  width: 100%; /* ✅ Fill the container */
   height: 50px;
   background: transparent;
   border: 2px solid #FFD700;
@@ -86,46 +65,26 @@ h2 {
   border-color: #D4AF37;
 }
 
-.input-box label {
-  position: absolute;
-  top: 50%;
-  left: 60px;
-  transform: translateY(-50%);
-  font-size: 1em;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s ease;
-}
-
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-  top: 1px;
-  font-size: 0.8em;
-  background: #1f293a;
-  padding: 0 6px;
-  color: #0ef;
-}
-
 .btn {
-  width: 50%;
+  width: 100%;
   height: 45px;
   background: #D4AF37;
   border: none;
-  outline: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 1em;
   color: #000;
   font-weight: 600;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
-/* ✅ POPUP STYLES */
+/* ✅ Optional popup styles if used */
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   background: #fff;
   text-align: center;
   border-radius: 6px;
@@ -153,7 +112,6 @@ h2 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .close-btn {
@@ -169,4 +127,4 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-}
+  }
