@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #fff;
+  box-shadow: 0 0 50px #000;
 }
 
 .co{
