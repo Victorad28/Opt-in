@@ -24,6 +24,7 @@ body {
   align-items: center;
   background: #000;
   box-shadow: 0 0 50px #D4AF37;
+  border-radius: 20px;
 }
 
 .co{
