@@ -17,7 +17,7 @@ body {
 
 .container {
   position: relative;
-  width: 300px;
+  width: 220px;
   height: 450px;
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@ h2 {
 }
 
 .input-box input {
-  width: 85%;
+  width: 65%;
   height: 50px;
   background: transparent;
   border: 2px solid #D4AF37;
@@ -88,7 +88,7 @@ h2 {
 .input-box label {
   position: absolute;
   top: 50%;
-  left: 40px;
+  left: 70px;
   transform: translateY(-50%);
   font-size: 1em;
   color: #fff;
