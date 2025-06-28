@@ -22,6 +22,14 @@ body {
   padding: 20px;
 }
 
+.open h1 {
+  color: #fff;
+}
+
+.open p {
+  color: #fff;
+}
+
 .container {
   width: 100%;
   max-width: 400px;
