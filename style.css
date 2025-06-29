@@ -156,7 +156,7 @@ h2 {
 
 .close-btn {
   position: absolute;
-  top: 1px;
+  top: 1px !important;
   right: 5px !important;
   background: #ff0000 !important;
   color: #000 !important;
