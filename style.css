@@ -22,6 +22,11 @@ body {
   padding: 20px;
 }
 
+.header, .open {
+  margin-top: 0;
+  padding-top: 0;
+} 
+
 .open h1 {
   color: #fff;
   text-align: center;
