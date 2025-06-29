@@ -156,7 +156,7 @@ h2 {
 
 .close-btn {
   position: absolute;
-  top: 1px !important;
+  top: 5px !important;
   right: 5px !important;
   background: #ff0000 !important;
   color: #000 !important;
@@ -167,4 +167,6 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  }
+  transform: none !important;
+  margin: 0 !important;
+   }
