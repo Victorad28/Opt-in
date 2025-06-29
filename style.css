@@ -136,6 +136,14 @@ h2 {
   transition: transform 0.4s, top 0.4s;
 }
 
+.popup h2 {
+  color: #000;
+} 
+
+.popup p {
+  color: #000;
+}
+
 .open-popup {
   visibility: visible;
   top: 50%;
