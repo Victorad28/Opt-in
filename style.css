@@ -159,10 +159,10 @@ h2 {
   top: 1px;
   right: 1px;
   background: #ff0000;
-  color: white;
+  color: #000;
   border: none;
   border-radius: 50%;
-  width: 2px;
+  width: 2px !important;
   height: 2px;
   font-size: 18px;
   font-weight: bold;
